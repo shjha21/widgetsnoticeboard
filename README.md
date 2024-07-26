@@ -1,4 +1,4 @@
-#Created by a team of 2 people.
+#Created in a team of 2 people.
 
 #DigitalNoticeBoard
 

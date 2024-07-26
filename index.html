@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomePageCustom</title>
+    <link rel="stylesheet" href="widgets.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>HyperVerge</h1>
+    </div>
+
+    <div id="widget-meta-options" class="special-widget meta-options special">
+        <h2>Meta Options</h2>
+        <div class="cont">
+            <div><input type="checkbox" id="toggle-weather" checked> Weather</div>
+            <div><input type="checkbox" id="toggle-google-slide" checked> Google Slide</div>
+            <div><input type="checkbox" id="toggle-google-sheet" checked> Google Spreadsheet</div>
+            <div><input type="checkbox" id="toggle-google-form" checked> Google Form</div>
+            <div><input type="checkbox" id="toggle-google-meet" checked> Google Meet</div>
+            <div><input type="checkbox" id="toggle-chatgpt" checked> ChatGPT</div>
+            <div><input type="checkbox" id="toggle-google-calendar" checked> Google Calendar</div>
+            <div><input type="checkbox" id="toggle-pomodoro-timer" checked> Pomodoro Timer</div>
+            <div><input type="checkbox" id="toggle-announcements" checked> Announcements</div>
+            <div><input type="checkbox" id="toggle-steps-tracker" checked> Steps/Health Tracker</div>
+            <div><input type="checkbox" id="toggle-opportunity-board" checked> Opportunity Board</div>
+            <div><input type="checkbox" id="toggle-leaderboard" checked> Leaderboard</div>
+            <div><input type="checkbox" id="toggle-til-corner" checked> TIL Corner</div>
+        </div>
+    </div>
+    
+    <div id="widgets-container">
+        
+        <div id="widget-weather" class="widget weather toggle-div">
+            <h2>Weather</h2>
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="get-weather">Get Weather</button>
+            <div id="weather-info">
+                <p id="temperature"></p>
+                <p id="weather-description"></p>
+                
+            </div>
+        </div>
+
+        <div id="widget-pomodoro-timer" class="widget pomodoro-timer toggle-div">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+
+        
+        <div id="widget-google-slide" class="widget google-slide toggle-div">
+            <h2>Google Slide</h2>
+            <div class="enter-link">
+                <input type="text" name="link" id="SlideID" placeholder="Enter Google Slide Link">
+                <button id="openSlideBtn">Open</button>
+            </div>
+            <iframe id="slideIframe" src="" frameborder="0" width="100%" height="300px" allowfullscreen="true" ></iframe>
+        </div>
+
+        
+        <div id="widget-google-sheet" class="widget google-sheet toggle-div">
+            <h2>Google Spreadsheet</h2>
+            <div class="enter-link">
+                <input type="text" name="link" id="sheetID" placeholder="Enter Google Sheet Link">
+                <button id="openSheetBtn">Open</button>
+            </div>
+            <iframe id="sheetIframe" src="" frameborder="0" width="100%" height="300px" allowfullscreen="true"></iframe>
+        </div>
+        
+        
+        <div id="widget-google-form" class="widget google-form toggle-div">
+            <h2>Google Forms</h2>
+            <div class="enter-link">
+                <input type="text" name="link" id="formID" placeholder="Enter Google Form Link">
+                <button id="openformBtn">Open</button>
+            </div>
+            <iframe id="formsIframe" src="" frameborder="0" width="100%" height="300px" allowfullscreen="true"></iframe>
+        </div>
+        
+        
+        <div id="widget-google-meet" class="widget google-meet toggle-div">
+            <h2>Google Meet</h2>
+            <div class="enter-link">
+                <input type="text" name="link" id="meetID" placeholder="Enter Google Meet Link">
+                <button id="openmeetBtn">Open</button>
+            </div>
+            <iframe id="meetIframe" src="" frameborder="0" width="100%" height="300px" allowfullscreen="true"></iframe>
+        </div>
+
+        <!--gpt implementation-->
+        <div id="widget-chatgpt" class="widget chatgpt toggle-div">
+            <h2>ChatGPT</h2>
+            <textarea id="chatgpt-prompt" placeholder="Enter your prompt"></textarea>
+            <button id="chatgpt-submit">Submit</button>
+            <div id="chatgpt-response"></div>
+        </div>
+        
+
+        
+        <div id="widget-google-calendar" class="widget google-calendar toggle-div">
+            <h2>Google Calendar</h2>
+            <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=YOUR_TIMEZONE" style="border: 0" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+       
+
+        
+        <div id="widget-announcements" class="widget announcements toggle-div">
+            <h2>Announcements</h2>
+            <div class="message-container">
+                <div class="message">
+                    <p>12/09/2024 12:29pm</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime dicta hic suscipit delectus natus exercitationem aliquid error quos facilis!</p>
+                </div>
+                <div class="message">
+                    <p>12/09/2024 12:29pm</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime dicta hic suscipit delectus natus exercitationem aliquid error quos facilis!</p>
+                </div>
+                <div class="message">
+                    <p>12/09/2024 12:29pm</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime dicta hic suscipit delectus natus exercitationem aliquid error quos facilis!</p>
+                </div>
+                <div class="message">
+                    <p>12/09/2024 12:29pm</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime dicta hic suscipit delectus natus exercitationem aliquid error quos facilis!</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="widget-steps-tracker" class="widget steps-tracker toggle-div">
+            <h2>Steps/Health Tracker</h2>
+            <input type="number" id="steps-input" placeholder="Enter steps walked">
+            <button id="log-steps">Log Steps</button>
+            <div id="steps-log">Steps walked today: 0</div>
+        </div>
+
+
+        
+        <div id="widget-opportunity-board" class="widget opportunity-board toggle-div">
+            <h2>Opportunity Board</h2>
+            <p><b>Opportunities for teams to collaborate and solve problems:</b></p>
+            <ul id="opportunity-list">
+                <li>AI team can automate repetitive tasks for the Marketing team.</li>
+                <li>Engineering team can develop in-house tools to replace paid software.</li>
+                
+            </ul>
+        </div>
+        
+        
+        <div id="widget-leaderboard" class="widget leaderboard toggle-div">
+            <h2>Leaderboard</h2>
+            <b><p>Top Performers:</p></b>
+            <ul id="leaderboard-list">
+                <li>Most steps walked: Alice (10,000 steps)</li>
+                <li>Most pages read: Bob (50 pages)</li>
+                <li>Most pomodoro timers clocked: Carol (8 timers)</li>
+                
+            </ul>
+        </div>
+
+        
+        <div id="widget-til-corner" class="widget til-corner toggle-div">
+            <h2>TIL (Today I Learned)</h2>
+            <input type="text" id="til-input" placeholder="Share something you learned today">
+            <button id="share-til">Share</button>
+            <div id="til-log"> <b>Latest learning: </b> The importance of code modularity.</div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="widgets.js"></script>
+    <script src="google_sheet_api.js"></script>
+    <scrpit src="weather_api.js"></scrpit>
+</body>
+</html>
